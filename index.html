@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat para vendedores y equipo de soporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn">☰</button>
+            <ul id="menu">
+                <li><a href="#">Página principal</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Manuales y tutoriales</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Organigrama</a></li>
+                <li><a href="#">Chat para vendedores y equipo de soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="chat-list">
+            <button id="toggle-chat-list">Conversaciones</button>
+            <input type="text" placeholder="Buscar conversaciones...">
+            <ul>
+                <li class="chat-item unread" data-user="Sarah Thompson">
+                    <img src="icons/user1.png" alt="User 1">
+                    <div>
+                        <span class="name">Sarah Thompson</span>
+                        <span class="last-message">¿Cómo soluciono el error 404?</span>
+                        <span class="timestamp">10:30</span>
+                    </div>
+                </li>
+                <li class="chat-item" data-user="Carlos Rivera">
+                    <img src="icons/user2.png" alt="User 2">
+                    <div>
+                        <span class="name">Carlos Rivera</span>
+                        <span class="last-message">Necesito ayuda con la configuración del servidor.</span>
+                        <span class="timestamp">Ayer</span>
+                    </div>
+                </li>
+                <li class="chat-item unread" data-user="Emily Watson">
+                    <img src="icons/user3.png" alt="User 3">
+                    <div>
+                        <span class="name">Emily Watson</span>
+                        <span class="last-message">¿Cómo optimizar mi base de datos?</span>
+                        <span class="timestamp">10:15</span>
+                    </div>
+                </li>
+                <li class="chat-item" data-user="Mark Lee">
+                    <img src="icons/user4.png" alt="User 4">
+                    <div>
+                        <span class="name">Mark Lee</span>
+                        <span class="last-message">Tengo problemas con la autenticación.</span>
+                        <span class="timestamp">Hoy</span>
+                    </div>
+                </li>
+                <li class="chat-item unread" data-user="Ana García">
+                    <img src="icons/user5.png" alt="User 5">
+                    <div>
+                        <span class="name">Ana García</span>
+                        <span class="last-message">¿Puedes revisar mi código?</span>
+                        <span class="timestamp">10:00</span>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <section id="chat-window">
+            <header>
+                <img src="icons/user1.png" alt="User 1">
+                <span>Usuario 1</span>
+            </header>
+            <div id="chat-messages">
+                <!-- Historial de conversación inventado -->
+            </div>
+            <footer>
+                <button id="attach-btn">➕</button>
+                <!-- Contenedor para el input de archivos -->
+                <div id="attach-menu">
+                    <label for="file-input">Subir archivo</label>
+                    <input type="file" id="file-input" accept="image/*,video/*,application/pdf,.doc,.docx,.xls,.xlsx">
+                </div>
+                <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+                <button id="send-btn">Enviar</button>
+            </footer>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
